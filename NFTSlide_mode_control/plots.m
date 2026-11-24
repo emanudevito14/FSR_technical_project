@@ -22,7 +22,7 @@ e_x = x_l_d_interp(:) - x_l;
 e_y =  y_l_d_interp(:)-y_l;
 e_z = z_l_d_interp(:)-z_l ;
 
-Tension=k*(l_sim-L_rest)+c*dot_l_sim;
+Tension=k_plant*(l_sim-L_rest)+c_plant*dot_l_sim;
 
 % --- Plot 1: 3D Tracking Trajectory ---
 figure('Name', 'Tracking Trajectory');
