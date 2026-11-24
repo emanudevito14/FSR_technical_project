@@ -9,7 +9,7 @@ err_x=-squeeze(out.ex.Data); %Nx3 matrix error of position load
 f=out.f.Data; %Nx1 vector thrust 
 M=squeeze(out.M.Data); %Nx3 matrix torques input
 
-tension=k*(out.l.Data-L)+c*out.dot_l.Data;
+tension=k_plant*(out.l.Data-L)+c_plant*out.dot_l.Data;
 
 %% 1. 3D TRAJECTORY TRACKING PLOT
 
